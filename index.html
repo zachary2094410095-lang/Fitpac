@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FitPac | Packaging Beyond Imagination</title>
+  <title>FITPAC | Packaging Made to Fit</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
@@ -37,7 +37,7 @@
     a { text-decoration: none; color: inherit; transition: var(--transition); }
     ul { list-style: none; }
     img { max-width: 100%; display: block; }
-    .container { max-width: 1500px; margin: 0 auto; padding: 0 24px; }
+    .container { max-width: 1600px; margin: 0 auto; padding: 0 20px; }
 
     /* ========== 导航栏 ========== */
     header {
@@ -50,16 +50,16 @@
     header.scrolled { box-shadow: var(--shadow); background: rgba(250, 247, 242, 0.98); }
 
     .nav { display: flex; align-items: center; justify-content: space-between; height: var(--nav-height); }
-    .logo-img { height: 64px; width: auto; }
+    .logo-img { height: 60px; width: auto; }
 
-    .nav-menu { display: flex; gap: 20px; align-items: center; height: 100%; }
+    .nav-menu { display: flex; gap: 10px; align-items: center; height: 100%; }
     .nav-item { height: 100%; display: flex; align-items: center; position: relative; }
     .nav-item > a {
-      font-size: 15px; font-weight: 600; color: var(--primary);
-      display: flex; align-items: center; gap: 4px; height: 100%; padding: 0 6px;
+      font-size: 13px; font-weight: 600; color: var(--primary);
+      display: flex; align-items: center; gap: 3px; height: 100%; padding: 0 5px;
       cursor: pointer; white-space: nowrap;
     }
-    .nav-item > a .arrow { font-size: 10px; transition: var(--transition); display: inline-block; }
+    .nav-item > a .arrow { font-size: 9px; transition: var(--transition); display: inline-block; }
     .nav-item:hover > a .arrow, .nav-item.active > a .arrow { transform: rotate(180deg); }
     .nav-item:hover > a { color: var(--accent); }
 
@@ -70,7 +70,7 @@
 
     .category-panel, .dropdown-panel {
       position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(10px);
-      width: 900px; background: #fff; border-radius: 16px; padding: 24px;
+      width: 880px; background: #fff; border-radius: 16px; padding: 24px;
       box-shadow: 0 20px 40px rgba(62, 39, 35, 0.12); border: 1px solid rgba(62, 39, 35, 0.05);
       opacity: 0; visibility: hidden; pointer-events: none;
       transition: var(--transition); display: grid; gap: 12px;
@@ -95,7 +95,7 @@
 
     .category-card-sm {
       background: var(--bg);
-      padding: 16px;
+      padding: 14px;
       border-radius: 10px;
       cursor: pointer;
       transition: var(--transition);
@@ -107,24 +107,24 @@
       border-color: var(--light);
     }
     .category-card-sm h4 {
-      font-size: 14px; font-family: 'Inter', sans-serif; font-weight: 700;
+      font-size: 13px; font-family: 'Inter', sans-serif; font-weight: 700;
       color: var(--primary); margin-bottom: 10px;
       padding-bottom: 8px; border-bottom: 2px solid var(--light);
     }
     .category-card-sm ul { display: flex; flex-direction: column; gap: 4px; }
     .category-card-sm ul li {
-      font-size: 12px; color: var(--text-muted); padding: 3px 0; line-height: 1.4;
+      font-size: 11.5px; color: var(--text-muted); padding: 3px 0; line-height: 1.4;
     }
 
     .dropdown-item {
       display: flex; align-items: center; gap: 12px; padding: 12px 16px;
-      border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--secondary);
+      border-radius: 8px; font-size: 14px; font-weight: 500; color: var(--secondary);
       cursor: pointer; text-align: left;
     }
     .dropdown-item:hover { background: var(--bg); color: var(--accent); }
 
     .btn-primary { 
-      padding: 10px 18px; font-size: 13px; font-weight: 600; 
+      padding: 10px 16px; font-size: 12px; font-weight: 600; 
       border-radius: 6px; border: none; cursor: pointer; transition: var(--transition);
       background: #FF9800; color: #fff; white-space: nowrap;
     }
@@ -187,11 +187,11 @@
       text-transform: uppercase; color: var(--accent); margin-bottom: 24px;
     }
     .hero-text-block h1 {
-      font-size: clamp(40px, 5vw, 72px); line-height: 1.05; margin-bottom: 28px;
+      font-size: clamp(40px, 5vw, 68px); line-height: 1.08; margin-bottom: 28px;
       letter-spacing: -0.01em;
     }
     .hero-text-block p {
-      font-size: 18px; color: var(--text-muted); max-width: 440px; margin: 0 auto 48px;
+      font-size: 17px; color: var(--text-muted); max-width: 480px; margin: 0 auto 48px;
       line-height: 1.7;
     }
 
@@ -259,10 +259,7 @@
       50% { transform: translateY(-4px); }
     }
 
-    /* ============================================
-       ★ 首页右侧：普通图片展示（无 3D 效果）
-       图片完整显示，不裁剪
-       ============================================ */
+    /* ========== 首页右侧：普通图片展示 ========== */
     .hero-product-stage {
       position: relative;
       width: 100%;
@@ -290,7 +287,6 @@
       box-shadow: 0 28px 60px rgba(62, 39, 35, 0.18);
     }
 
-    /* ★ 关键：height auto + object-fit contain，图片完整显示不裁剪 */
     .hero-product-card img {
       width: 100%;
       height: auto;
@@ -374,8 +370,6 @@
     }
     .category-overview-card:hover .cat-overview-img img { transform: scale(1.06); }
 
-    /* ★ 已删除 .cat-overview-icon 样式 */
-
     .cat-overview-info {
       padding: 32px 36px;
       flex: 1;
@@ -384,7 +378,7 @@
       justify-content: center;
     }
     .cat-overview-info h3 {
-      font-size: 26px; margin-bottom: 14px;
+      font-size: 24px; margin-bottom: 14px;
       color: var(--primary);
     }
     .cat-overview-info > p {
@@ -393,7 +387,7 @@
     }
 
     /* ========== 类目详情页 ========== */
-    .page-category-detail { padding: 120px 0 80px; min-height: 100vh; background: #fff; }
+    .page-category-detail { padding: 160px 0 80px; min-height: 100vh; background: #fff; }
     
     .category-hero {
       display: grid;
@@ -430,9 +424,7 @@
       font-size: 14px;
     }
 
-    /* ============================================
-       ★ 二级类目卡片：图片完整显示
-       ============================================ */
+    /* 二级类目卡片 */
     .subcategory-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -464,7 +456,6 @@
       align-items: center;
       justify-content: center;
     }
-    /* ★ 关键：object-fit contain，图片完整显示不裁剪 */
     .subcat-card-img img {
       width: 100%;
       height: 100%;
@@ -505,10 +496,90 @@
       flex: 1;
     }
 
+    /* ========== Packaging Project Service 专用布局 ========== */
+    .project-service-section {
+      padding: 20px 0 60px;
+    }
+    .project-service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+    .project-service-card {
+      background: #fff;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(62, 39, 35, 0.06);
+      transition: var(--transition);
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .project-service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--light);
+    }
+    .project-service-img {
+      height: 320px;
+      overflow: hidden;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .project-service-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+    .project-service-card:hover .project-service-img img {
+      transform: scale(1.05);
+    }
+    .project-service-tag {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: var(--primary);
+      color: #fff;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .project-service-body {
+      padding: 28px 32px 32px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .project-service-body h4 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+    .project-service-body p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+    .project-service-body .service-num {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
     /* ========== 二级类目详情页 ========== */
-    .page-detail { padding: 120px 0 80px; min-height: 100vh; background: #fff; }
-    .back-btn { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: var(--accent); margin-bottom: 40px; cursor: pointer; font-size: 15px; }
-    .back-btn:hover { color: var(--primary); }
+    .page-detail { padding: 160px 0 80px; min-height: 100vh; background: #fff; }
 
     .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 60px; align-items: center; }
     .detail-visual { background: var(--bg); border-radius: 24px; padding: 40px; display: flex; justify-content: center; align-items: center; box-shadow: var(--shadow); border: 1px solid rgba(62, 39, 35, 0.04); }
@@ -525,10 +596,82 @@
     .info-block ul li:last-child { border-bottom: none; }
     .info-block ul li strong { color: var(--primary); }
 
+    /* ========== 返回按钮：固定在左上角 ========== */
+    .back-btn {
+      position: fixed;
+      top: 108px;
+      left: 32px;
+      z-index: 998;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 24px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 40px;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      box-shadow:
+        0 12px 32px rgba(62, 39, 35, 0.35),
+        0 4px 12px rgba(62, 39, 35, 0.2);
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      border: 2px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .back-btn::before {
+      content: '←';
+      font-size: 18px;
+      font-weight: 700;
+      transition: transform 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: var(--accent);
+      color: #fff;
+      transform: translateY(-3px) scale(1.03);
+      box-shadow:
+        0 16px 40px rgba(62, 39, 35, 0.45),
+        0 6px 16px rgba(62, 39, 35, 0.25);
+    }
+
+    .back-btn:hover::before {
+      transform: translateX(-4px);
+    }
+
     /* ========== Footer ========== */
     footer { background: #2A1A17; color: rgba(255,255,255,0.6); padding: 60px 0 30px; }
     .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
-    .footer-logo-img { height: 64px; width: auto; margin-bottom: 16px; filter: brightness(0) invert(1); }
+
+    .footer-logo-img {
+      height: 128px;
+      width: auto;
+      margin-bottom: 20px;
+      background: #FAF7F2;
+      padding: 16px 24px;
+      border-radius: 12px;
+    }
+
+    .footer-company-name {
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+    .footer-company-full {
+      color: var(--light);
+      font-size: 13px;
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+    .footer-company-cn {
+      color: rgba(255,255,255,0.5);
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
     .footer-col h4 { color: #fff; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 20px; }
     .footer-col ul li { margin-bottom: 10px; }
     .footer-col ul li a { font-size: 14px; color: rgba(255,255,255,0.6); }
@@ -536,11 +679,17 @@
     .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; font-size: 13px; display: flex; justify-content: space-between; }
 
     /* ========== 响应式 ========== */
+    @media (max-width: 1400px) {
+      .nav-item > a { font-size: 12px; padding: 0 3px; }
+      .nav-menu { gap: 6px; }
+      .logo-img { height: 50px; }
+    }
+
     @media (max-width: 1300px) {
       .category-panel { width: 95vw; left: 2.5vw; transform: translateX(0) translateY(10px); }
       .nav-item:hover .category-panel { transform: translateX(0) translateY(0); }
-      .nav-item > a { font-size: 14px; padding: 0 4px; }
-      .nav-menu { gap: 14px; }
+      .nav-item > a { font-size: 11.5px; padding: 0 3px; }
+      .nav-menu { gap: 4px; }
     }
 
     @media (max-width: 1100px) {
@@ -552,6 +701,7 @@
       .category-overview-grid { grid-template-columns: 1fr; }
       .subcategory-grid { grid-template-columns: 1fr; }
       .category-hero { grid-template-columns: 1fr; }
+      .project-service-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 992px) {
@@ -565,7 +715,7 @@
       }
       .nav-menu.active { display: flex; }
       .nav-item { width: 100%; height: auto; flex-direction: column; align-items: flex-start; border-bottom: 1px solid rgba(62,39,35,0.05); }
-      .nav-item > a { padding: 16px 24px; height: auto; width: 100%; justify-content: space-between; box-sizing: border-box; font-size: 16px; }
+      .nav-item > a { padding: 16px 24px; height: auto; width: 100%; justify-content: space-between; box-sizing: border-box; font-size: 15px; }
       
       .category-panel, .dropdown-panel {
         position: static !important; transform: none !important;
@@ -604,8 +754,21 @@
       .hero-product-caption .caption-title { font-size: 13px; }
       .hero-product-caption .caption-tag { display: none; }
 
+      .project-service-img { height: 220px; }
+      .project-service-body { padding: 20px; }
+
       .logo-img { height: 38px; }
-      .footer-logo-img { height: 50px; }
+      .footer-logo-img { height: 96px; padding: 12px 18px; }
+
+      .back-btn {
+        top: 88px;
+        left: 16px;
+        padding: 10px 18px;
+        font-size: 12px;
+      }
+      .back-btn::before {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
@@ -617,8 +780,8 @@
       <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
       
       <a href="#" class="logo" onclick="showPage('home'); return false;">
-        <img src="https://raw.githubusercontent.com/zachary2094410095-lang/Fitpac/main/assets/logo.png" alt="FITPAC Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-        <span style="display:none; font-family:'Playfair Display',serif; font-weight:700; font-size:32px; color:var(--primary); letter-spacing:2px;">FITPAC</span>
+        <img src="https://cdn.jsdelivr.net/gh/zachary2094410095-lang/Fitpac@main/assets/logo.png" alt="FITPAC Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+        <span style="display:none; font-family:'Playfair Display',serif; font-weight:700; font-size:28px; color:var(--primary); letter-spacing:2px;">FITPAC</span>
       </a>
       
       <nav class="nav-menu" id="navMenu">
@@ -645,8 +808,16 @@
           <div class="category-panel" id="panel-flexible"></div>
         </div>
         <div class="nav-item">
-          <a href="#">Other <span class="arrow">▾</span></a>
-          <div class="category-panel" id="panel-other"></div>
+          <a href="#">Blister <span class="arrow">▾</span></a>
+          <div class="category-panel" id="panel-blister"></div>
+        </div>
+        <div class="nav-item">
+          <a href="#">Stickers <span class="arrow">▾</span></a>
+          <div class="category-panel" id="panel-stickers"></div>
+        </div>
+        <div class="nav-item">
+          <a href="#">Project Service <span class="arrow">▾</span></a>
+          <div class="category-panel" id="panel-projects"></div>
         </div>
 
         <div class="nav-item">
@@ -678,9 +849,9 @@
     <div class="page-home">
       <div class="hero-layout">
         <div class="hero-text-block">
-          <div class="hero-subtitle">FLEXIBLE PACKAGING · WORLDWIDE</div>
-          <h1>Packaging<br/>Beyond<br/>Imagination</h1>
-          <p>We create packaging solutions that protect products, build brands and move ideas forward across 12 major industries.</p>
+          <div class="hero-subtitle">CUSTOM PACKAGING SOLUTIONS</div>
+          <h1>Packaging<br/>Made to Fit</h1>
+          <p>We specialize in custom packaging solutions. With professional expertise and end-to-end support, we turn your packaging needs into perfectly fitted, beautifully crafted, and reliably delivered solutions.</p>
           
           <div class="voyage-btn-wrapper">
             <div class="splash-container">
@@ -693,10 +864,9 @@
           </div>
         </div>
         
-        <!-- ★ 右侧：普通图片展示，无 3D 效果，图片完整显示 -->
         <div class="hero-product-stage">
           <div class="hero-product-card">
-            <img src="https://raw.githubusercontent.com/zachary2094410095-lang/Fitpac/main/assets/hero-packaging.jpg" 
+            <img src="https://cdn.jsdelivr.net/gh/zachary2094410095-lang/Fitpac@main/assets/hero-packaging.jpg" 
                  alt="Custom Packaging Solutions" 
                  loading="lazy" 
                  onerror="this.outerHTML='<div style=\'padding:40px;text-align:center;color:#A67B5B;font-size:14px;\'>hero-packaging.jpg 加载失败</div>'" />
@@ -716,7 +886,7 @@
       <div class="container">
         <div class="catalog-header">
           <h2>Our Packaging Categories</h2>
-          <p>Explore our comprehensive range of packaging solutions across six major material categories. Click any category to see detailed product types.</p>
+          <p>Explore our comprehensive range of packaging solutions across multiple material categories. Click any category to see detailed product types.</p>
         </div>
         <div class="category-overview-grid" id="categoryOverviewGrid"></div>
       </div>
@@ -727,7 +897,7 @@
   <main id="page-category-detail" class="page-view">
     <section class="page-category-detail">
       <div class="container">
-        <div class="back-btn" onclick="showPage('catalog')">← Back to Categories</div>
+        <div class="back-btn" onclick="showPage('catalog')">Back to Categories</div>
 
         <div class="category-hero">
           <div class="category-hero-img">
@@ -736,11 +906,17 @@
           <div class="category-hero-info">
             <h2 id="categoryHeroTitle">Paper Packaging</h2>
             <p class="intro-text" id="categoryHeroIntro"></p>
-            <div class="subcat-count" id="categoryHeroCount">5 Sub-categories</div>
+            <div class="subcat-count" id="categoryHeroCount">Sub-categories</div>
           </div>
         </div>
 
+        <!-- 常规二级类目网格 -->
         <div class="subcategory-grid" id="subcategoryGrid"></div>
+
+        <!-- ★ Project Service 专用布局 -->
+        <div class="project-service-section" id="projectServiceSection" style="display:none;">
+          <div class="project-service-grid" id="projectServiceGrid"></div>
+        </div>
       </div>
     </section>
   </main>
@@ -749,7 +925,7 @@
   <main id="page-detail" class="page-view">
     <section class="page-detail">
       <div class="container">
-        <div class="back-btn" id="detailBackBtn" onclick="showPage('catalog')">← Back to Categories</div>
+        <div class="back-btn" id="detailBackBtn" onclick="showPage('catalog')">Back to Categories</div>
         
         <div class="detail-grid">
           <div class="detail-visual">
@@ -762,19 +938,20 @@
           </div>
         </div>
 
+        <!-- ★ 删除了 3 个 emoji 图标，只保留纯文本标题 -->
         <div class="info-blocks">
           <div class="info-block">
-            <h4>🧱 Common Materials</h4>
+            <h4>Common Materials</h4>
             <ul id="detailMaterials"></ul>
           </div>
           <div class="info-block">
-            <h4>🎯 Typical Product Examples</h4>
+            <h4>Typical Product Examples</h4>
             <ul id="detailExamples"></ul>
           </div>
         </div>
 
         <div class="info-block" style="margin-bottom: 80px;">
-          <h4>📦 Specific Product Types</h4>
+          <h4>Specific Product Types</h4>
           <ul id="detailProducts"></ul>
         </div>
       </div>
@@ -786,15 +963,18 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="https://raw.githubusercontent.com/zachary2094410095-lang/Fitpac/main/assets/logo.png" alt="FITPAC Logo" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <img src="https://cdn.jsdelivr.net/gh/zachary2094410095-lang/Fitpac@main/assets/logo.png" alt="FITPAC Logo" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
           <span style="display:none; font-family:'Playfair Display',serif; font-weight:700; font-size:32px; color:#fff; letter-spacing:2px;">FITPAC</span>
-          <p>FITPAC provides digital and gravure flexible packaging solutions, serving global brands across 12 industries since 2016.</p>
+          <div class="footer-company-name">FITPAC</div>
+          <div class="footer-company-full">Shenzhen Fitpac Packaging Co. Limited</div>
+          <div class="footer-company-cn">深圳市飞特派克包装有限公司</div>
+          <p>FITPAC provides digital and rotogravure flexible packaging solutions, serving global brands across 12 industries. Our mission is to deliver the right packaging solutions and attentive service.</p>
         </div>
         <div class="footer-col">
           <h4>Solutions</h4>
           <ul>
             <li><a href="#">Digital Printing</a></li>
-            <li><a href="#">Gravure Printing</a></li>
+            <li><a href="#">Rotogravure Printing</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -813,19 +993,38 @@
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 FITPAC. All rights reserved.</span>
-        <span>Flexible Packaging &middot; From Prototype to Scale</span>
+        <span>Packaging Made to Fit</span>
       </div>
     </div>
   </footer>
 
   <script>
-    // ============ GitHub 图片基础路径 ============
-    const IMG_BASE = 'https://raw.githubusercontent.com/zachary2094410095-lang/Fitpac/main/assets/';
+    // ============ GitHub 图片基础路径（jsDelivr CDN 加速） ============
+    const IMG_BASE = 'https://cdn.jsdelivr.net/gh/zachary2094410095-lang/Fitpac@main/assets/';
 
+    // ★ 首字母大写工具函数：保留 PET / BOPP / HDPE 等全大写专业缩写
+    function toTitleCase(str) {
+      if (!str) return '';
+      return str
+        .trim()
+        .split(' ')
+        .map(word => {
+          if (word.length <= 1) return word.toUpperCase();
+          if (word === word.toUpperCase() && /[A-Z]/.test(word)) return word;
+          return word.charAt(0).toUpperCase() + word.slice(1);
+        })
+        .join(' ');
+    }
+
+    // 把逗号分隔的字符串转换成首字母大写的数组
+    function formatList(str) {
+      return str.split(',').map(item => toTitleCase(item.trim()));
+    }
+
+    // ============ 包装数据（8 大类别） ============
     const packagingData = {
       paper: {
         name: 'Paper Packaging',
-        icon: '📄',
         intro: 'Sustainable, printable, and recyclable paper-based packaging for retail, food service, and shipping. Available in a wide range of forms from boxes to cups.',
         coverImg: IMG_BASE + 'paper.jpg',
         categories: [
@@ -838,11 +1037,10 @@
       },
       plastic: {
         name: 'Plastic Packaging',
-        icon: '♻️',
         intro: 'Versatile and durable plastic packaging available in bags, bottles, jars, tubes, and caps. Ideal for food, cosmetics, and household products.',
         coverImg: IMG_BASE + 'plastic.jpg',
         categories: [
-          { id: 'plastic-bags', name: 'Plastic Bags/Flexible Pouches', materials: 'PET/PE, BOPP, aluminum foil composite film', products: 'Stand-up pouches, zipper pouches, vacuum bags, foil bags, center seal, three-side seal, eight-side seal, spout pouches', examples: 'Coffee bags, pet food bags, snack bags, tea bags, liquid spout pouches', desc: 'Versatile flexible plastic pouches for various products.', img: IMG_BASE + 'plastic-bags.jpg' },
+          { id: 'plastic-bags', name: 'Plastic Bags/Flexible Pouches', materials: 'PET/PE, BOPP, aluminum foil composite film', products: 'Stand Up Pouch, Flat Pouch, Middle Sealed Pouch, Side Gusset Pouch, Flat Bottom Pouch, Spout Pouch, Roll Film, Die Cut Shape Bag', examples: 'Coffee bags, pet food bags, snack bags, tea bags, liquid spout pouches', desc: 'Versatile flexible plastic pouches for various products.', img: IMG_BASE + 'plastic-bags.jpg' },
           { id: 'plastic-bottles', name: 'Plastic Bottles', materials: 'PET, PE, PP, HDPE, LDPE, PVC', products: 'PET bottles, PE bottles, PP bottles, HDPE bottles, LDPE bottles, PVC bottles', examples: 'Cosmetic bottles, beverage bottles, juice bottles, milk bottles, spray bottles', desc: 'Durable plastic bottles for liquids and cosmetics.', img: IMG_BASE + 'plastic-bottles.jpg' },
           { id: 'plastic-jars', name: 'Plastic Jars/Containers', materials: 'PP, PET, PS', products: 'Plastic jars, boxes, crates, buckets, cups', examples: 'Food storage jars, cosmetic jars, storage boxes, buckets', desc: 'Practical plastic jars and containers for storage.', img: IMG_BASE + 'plastic-jars.jpg' },
           { id: 'plastic-tubes', name: 'Plastic Tubes', materials: 'PE, PP, aluminum-plastic composite', products: 'Plastic tubes, squeeze tubes', examples: 'Toothpaste tubes, hand cream tubes, cosmetic tubes, ointment tubes', desc: 'Squeezable tubes for creams and gels.', img: IMG_BASE + 'plastic-tubes.jpg' },
@@ -851,7 +1049,6 @@
       },
       metal: {
         name: 'Metal Packaging',
-        icon: '🥫',
         intro: 'Durable and premium metal packaging for food, beverages, and cosmetics. Offers excellent protection and a high-end feel.',
         coverImg: IMG_BASE + 'metal.jpg',
         categories: [
@@ -863,7 +1060,6 @@
       },
       glass: {
         name: 'Glass Packaging',
-        icon: '🍾',
         intro: 'Elegant and premium glass packaging that enhances product visibility. Perfect for beverages, cosmetics, and food preserves.',
         coverImg: IMG_BASE + 'glass.jpg',
         categories: [
@@ -873,7 +1069,6 @@
       },
       flexible: {
         name: 'Flexible/Composite Packaging',
-        icon: '📦',
         intro: 'High-barrier and lightweight flexible packaging solutions. Ideal for food preservation, e-commerce shipping, and industrial applications.',
         coverImg: IMG_BASE + 'flexible.jpg',
         categories: [
@@ -882,16 +1077,72 @@
           { id: 'flex-mailers', name: 'Courier Bags/Envelopes', materials: 'PE, kraft paper, bubble film', products: 'Courier envelopes, bubble bags, document bags', examples: 'E-commerce courier bags, document mailing bags, bubble protective bags', desc: 'Protective mailers for shipping and e-commerce.', img: IMG_BASE + 'flex-mailers.jpg' }
         ]
       },
-      other: {
-        name: 'Other Packaging',
-        icon: '🎁',
-        intro: 'Specialty packaging solutions including wooden, cloth, labels, and auxiliary materials for a complete packaging ecosystem.',
-        coverImg: IMG_BASE + 'other.jpg',
+      // ★ Blister Packaging 吸塑包装
+      blister: {
+        name: 'Blister Packaging',
+        intro: 'Thermoformed blister packaging solutions for electronics, hardware, cosmetics, and medical products. Offers excellent product visibility and protection.',
+        coverImg: IMG_BASE + 'blister.jpg',
         categories: [
-          { id: 'other-wood', name: 'Wooden Packaging', materials: 'Pine, bamboo', products: 'Wooden boxes, wooden gift boxes, wooden pallets', examples: 'Wine boxes, tea boxes, jewelry boxes, wooden pallets', desc: 'Natural wooden packaging for premium goods.', img: IMG_BASE + 'other-wood.jpg' },
-          { id: 'other-cloth', name: 'Cloth Packaging', materials: 'Cotton, non-woven, linen', products: 'Cloth bags, non-woven bags, cotton bags, drawstring bags', examples: 'Eco shopping bags, jewelry bags, gift bags, storage bags', desc: 'Reusable cloth bags for retail and gifts.', img: IMG_BASE + 'other-cloth.jpg' },
-          { id: 'other-labels', name: 'Labels/Stickers', materials: 'Paper, PET, PVC', products: 'Packaging labels, adhesive labels, anti-counterfeit labels', examples: 'Product labels, security labels, barcode labels, stickers', desc: 'Custom printed labels and stickers for branding.', img: IMG_BASE + 'other-labels.jpg' },
-          { id: 'other-aux', name: 'Packaging Auxiliary Materials', materials: 'Plastic, paper', products: 'Adhesive tape, cable ties, zip ties, sealing clips', examples: 'Carton sealing tape, warning tape, zip ties, sealing clips', desc: 'Essential accessories for packaging and shipping.', img: IMG_BASE + 'other-aux.jpg' }
+          { id: 'blister-card', name: 'Carded Blister', materials: 'PVC, PET, paper card', products: 'Paper card blister, slide blister, clamshell blister', examples: 'Hardware tools, small electronics, toys, stationery', desc: 'Blister sealed to printed card for retail display.', img: IMG_BASE + 'blister-card.jpg' },
+          { id: 'blister-tray', name: 'Blister Trays', materials: 'PET, PS, PVC', products: 'Thermoformed trays, clamshell trays, insert trays', examples: 'Electronics, cosmetics, medical devices, food', desc: 'Custom-shaped trays for product protection.', img: IMG_BASE + 'blister-tray.jpg' },
+          { id: 'blister-clamshell', name: 'Clamshell Packaging', materials: 'PET, PVC, PP', products: 'Single clamshell, double clamshell, tri-fold clamshell', examples: 'Consumer electronics, hardware, household goods', desc: 'Hinged blister packs for retail display.', img: IMG_BASE + 'blister-clamshell.jpg' },
+          { id: 'blister-custom', name: 'Custom Blister', materials: 'PET, PS, PVC, PP', products: 'Die-cut blister, custom-shaped blister, skin packaging', examples: 'Medical, automotive parts, industrial components', desc: 'Fully customized blister solutions.', img: IMG_BASE + 'blister-custom.jpg' }
+        ]
+      },
+      // ★ Custom Stickers 贴纸定制
+      stickers: {
+        name: 'Custom Stickers',
+        intro: 'Custom-printed stickers and labels in any shape, size, and finish. From die-cut shapes to holographic effects, we deliver labels that elevate your brand.',
+        coverImg: IMG_BASE + 'stickers.jpg',
+        categories: [
+          { id: 'sticker-roll', name: 'Roll Labels', materials: 'Paper, PET, PVC, vinyl', products: 'Continuous roll labels, die-cut roll labels', examples: 'Beverage bottles, food jars, cosmetics, logistics', desc: 'Roll-format labels for automatic application.', img: IMG_BASE + 'sticker-roll.jpg' },
+          { id: 'sticker-sheet', name: 'Sheet Labels', materials: 'Paper, PET, PVC', products: 'A4/A3 sheets, multi-up sheets, kiss-cut sheets', examples: 'Small-batch products, samples, home use', desc: 'Sheet-format labels for manual application.', img: IMG_BASE + 'sticker-sheet.jpg' },
+          { id: 'sticker-diecut', name: 'Die-Cut Shape Stickers', materials: 'Vinyl, PET, paper', products: 'Custom die-cut shapes, kiss-cut, contour cut', examples: 'Branding, packaging seals, giveaways, decoration', desc: 'Any-shape die-cut stickers for unique branding.', img: IMG_BASE + 'sticker-diecut.jpg' },
+          { id: 'sticker-holo', name: 'Holographic Stickers', materials: 'Holographic film, PET', products: 'Holographic labels, security seals, anti-counterfeit labels', examples: 'Premium products, security, cosmetics, tickets', desc: 'Shiny holographic stickers for anti-counterfeit and premium look.', img: IMG_BASE + 'sticker-holo.jpg' }
+        ]
+      },
+      // ★ Packaging Project Service
+      projects: {
+        name: 'Packaging Project Service',
+        intro: 'We help you build a coordinated packaging solution that fits your product, your brand, and your market.',
+        coverImg: IMG_BASE + 'projects.jpg',
+        categories: [
+          {
+            id: 'proj-bag-box', name: 'Bag + Box',
+            tag: '01',
+            materials: 'Paper, plastic film, corrugated board',
+            products: 'Custom paper bag with matching paper box',
+            examples: 'Retail gift sets, apparel packaging, cosmetic gift boxes',
+            desc: 'A coordinated retail-ready solution pairing a custom paper bag with a matching box — perfect for gift sets and premium retail launches.',
+            img: IMG_BASE + 'proj-bag-box.jpg'
+          },
+          {
+            id: 'proj-small-large-box', name: 'Small Box + Large Box',
+            tag: '02',
+            materials: 'Paper, rigid board, corrugated',
+            products: 'Small inner box with large outer box',
+            examples: 'Electronics, subscription boxes, multi-item gift sets',
+            desc: 'A nested packaging system with a small product box and a larger outer shipper — ideal for e-commerce and retail bundles.',
+            img: IMG_BASE + 'proj-small-large-box.jpg'
+          },
+          {
+            id: 'proj-label-jar', name: 'Label + Glass/Plastic Jar',
+            tag: '03',
+            materials: 'Glass / PET / PP jar + custom label',
+            products: 'Custom label with glass jar or plastic jar',
+            examples: 'Cosmetics, candles, honey, jams, sauces, supplements',
+            desc: 'A complete jar solution pairing a premium glass or plastic jar with a custom-printed label for a polished retail look.',
+            img: IMG_BASE + 'proj-label-jar.jpg'
+          },
+          {
+            id: 'proj-jar-box', name: 'Glass/Plastic Jar + Box',
+            tag: '04',
+            materials: 'Glass / plastic jar + paper box',
+            products: 'Jar with matching paper box',
+            examples: 'Gift sets, cosmetics, premium foods, wellness products',
+            desc: 'A premium gift-set combination with a jar and a custom box — designed for luxury unboxing and retail display.',
+            img: IMG_BASE + 'proj-jar-box.jpg'
+          }
         ]
       }
     };
@@ -919,8 +1170,7 @@
       }
     });
 
-    // ★ 移除了 3D 鼠标跟随的 JS 监听
-
+    // 显示导航下拉面板
     function renderAllPanels() {
       for (const key in packagingData) {
         const panel = document.getElementById('panel-' + key);
@@ -933,16 +1183,16 @@
           <div class="category-card-sm" onclick="event.stopPropagation(); showCategoryDetail('${key}', '${cat.id}');">
             <h4>${cat.name}</h4>
             <ul>
-              ${cat.products.split(',').slice(0, 5).map(p => `<li>• ${p.trim()}</li>`).join('')}
+              ${formatList(cat.products).slice(0, 5).map(p => `<li>• ${p}</li>`).join('')}
             </ul>
           </div>
         `).join('');
       }
     }
 
+    // 一级目录页
     function renderCategoryOverview() {
       const grid = document.getElementById('categoryOverviewGrid');
-      // ★ 已删除 cat-overview-icon 图标
       grid.innerHTML = Object.keys(packagingData).map(key => {
         const data = packagingData[key];
         return `
@@ -959,6 +1209,7 @@
       }).join('');
     }
 
+    // 类目详情页
     function renderCategoryDetailView(categoryKey) {
       const data = packagingData[categoryKey];
       if (!data) return;
@@ -968,26 +1219,52 @@
       document.getElementById('categoryHeroImg').src = data.coverImg;
       document.getElementById('categoryHeroCount').innerText = `${data.categories.length} Sub-categories`;
 
-      const grid = document.getElementById('subcategoryGrid');
-      grid.innerHTML = data.categories.map(cat => `
-        <div class="subcategory-card" onclick="showCategoryDetail('${categoryKey}', '${cat.id}')">
-          <div class="subcat-card-img">
-            <img src="${cat.img}" alt="${cat.name}" loading="lazy" />
-          </div>
-          <div class="subcat-card-body">
-            <h4>${cat.name}</h4>
-            <p class="subcat-desc">${cat.desc}</p>
-            <div class="subcat-info-line">
-              <span class="subcat-info-label">Materials:</span>
-              <span class="subcat-info-value">${cat.materials}</span>
+      const subcategoryGrid = document.getElementById('subcategoryGrid');
+      const projectSection = document.getElementById('projectServiceSection');
+
+      // Project Service 使用特殊布局
+      if (categoryKey === 'projects') {
+        subcategoryGrid.style.display = 'none';
+        projectSection.style.display = 'block';
+
+        const projectGrid = document.getElementById('projectServiceGrid');
+        projectGrid.innerHTML = data.categories.map(cat => `
+          <div class="project-service-card" onclick="showCategoryDetail('${categoryKey}', '${cat.id}')">
+            <div class="project-service-img">
+              <span class="project-service-tag">${cat.tag}</span>
+              <img src="${cat.img}" alt="${cat.name}" loading="lazy" />
             </div>
-            <div class="subcat-info-line">
-              <span class="subcat-info-label">Examples:</span>
-              <span class="subcat-info-value">${cat.examples}</span>
+            <div class="project-service-body">
+              <span class="service-num">Project 0${cat.tag.replace('0','')}</span>
+              <h4>${cat.name}</h4>
+              <p>${cat.desc}</p>
             </div>
           </div>
-        </div>
-      `).join('');
+        `).join('');
+      } else {
+        subcategoryGrid.style.display = 'grid';
+        projectSection.style.display = 'none';
+
+        subcategoryGrid.innerHTML = data.categories.map(cat => `
+          <div class="subcategory-card" onclick="showCategoryDetail('${categoryKey}', '${cat.id}')">
+            <div class="subcat-card-img">
+              <img src="${cat.img}" alt="${cat.name}" loading="lazy" />
+            </div>
+            <div class="subcat-card-body">
+              <h4>${cat.name}</h4>
+              <p class="subcat-desc">${cat.desc}</p>
+              <div class="subcat-info-line">
+                <span class="subcat-info-label">Materials:</span>
+                <span class="subcat-info-value">${formatList(cat.materials).join(', ')}</span>
+              </div>
+              <div class="subcat-info-line">
+                <span class="subcat-info-label">Examples:</span>
+                <span class="subcat-info-value">${formatList(cat.examples).join(', ')}</span>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
 
       showPage('category-detail');
     }
@@ -1020,14 +1297,15 @@
       document.getElementById('detailMainImg').src = category.img;
       document.getElementById('detailTag').innerText = parent.name;
 
+      // ★ 使用 formatList 让每个条目首字母大写
       document.getElementById('detailMaterials').innerHTML =
-        category.materials.split(',').map(m => `<li>${m.trim()}</li>`).join('');
+        formatList(category.materials).map(m => `<li>${m}</li>`).join('');
 
       document.getElementById('detailExamples').innerHTML =
-        category.examples.split(',').map(e => `<li>${e.trim()}</li>`).join('');
+        formatList(category.examples).map(e => `<li>${e}</li>`).join('');
 
       document.getElementById('detailProducts').innerHTML =
-        category.products.split(',').map(p => `<li>${p.trim()}</li>`).join('');
+        formatList(category.products).map(p => `<li>${p}</li>`).join('');
 
       document.getElementById('detailBackBtn').onclick = function() {
         showCategoryDetailView(parentKey);
